@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // cara biasa
+      function carabiasa() {
+        console.log("Hello cara biasa!");
+      }
+
+      // ekspresi
+      var ekspresi = function () {
+        console.log("Hello ekspresi!");
+      };
+
+      //tanda panah
+      var tandapanah = () => {
+        console.log("Hello tanda panah!");
+      };
+      // atau seperti ini (jika isi fungsi hanya satu baris):
+      var tandapanah2 = () => console.log("Hello tanda panah 2!");
+
+      //konstruktor
+      var konstruktor = new Function('console.log("Hello konstruktor!");');
+
+      // panggil fungsi
+      carabiasa();
+      ekspresi();
+      tandapanah();
+      tandapanah2();
+      konstruktor();
+    </script>
+  </head>
+  <body></body>
+</html>
